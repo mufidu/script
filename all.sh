@@ -1,2 +1,3 @@
 #!/bin/sh
- ./neofetch.sh && ./blessed.sh
+# not work 
+./neofetch.sh && ./blessed.sh

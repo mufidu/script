@@ -1,7 +1,7 @@
 # script
 
-## Run neofetch in Konsole
+## Run in Konsole
 
 ```bash
-konsole --noclose -e path/to/script/neofetch.sh
+cd /path/to/script && konsole --noclose -e /path/to/script/blessed.sh & sleep 1s && konsole --noclose -e /path/to/script/htop.sh & sleep 2s && konsole --noclose -e /path/to/script/neofetch.sh
 ```
