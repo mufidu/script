@@ -1,4 +1,4 @@
-# script
+# scripts written for Ubuntu
 
 Firstly run `chmod -R 777 *`
 
@@ -11,13 +11,13 @@ Firstly run `chmod -R 777 *`
 ## Make a new shortcut for Chrome (useful if you use more than one account)
 
 ```bash
-./chrome_profile.sh
+./chrome-new-shortcut.sh
 ```
 
-## Enable dark mode in Chrome, without emulating it (thanks to [felipecrs](https://github.com/felipecrs/dotfiles))
+## Enable dark mode in Chrome, without emulating it (thanks to [felipecrs](https://github.com/felipecrs/dotfiles/))
 
 ```bash
-./chrome-dark-mode.sh
+sudo ./chrome-dark-mode.sh
 ```
 
 ## Fix loose object error when pushing in Git
