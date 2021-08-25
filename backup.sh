@@ -1,5 +1,6 @@
 rewind -b
 mv /storage/emulated/0/Termux/Backup/pkgs.bak ~/repos/termux-backup
+mv /storage/emulated/0/Termux/Backup/home.bak ~/repos/termux-backup
 cd ~/repos/termux-backup
 git add .
 git commit -m "backup $(date)"
