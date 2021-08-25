@@ -18,10 +18,13 @@ Firstly run `chmod -R 777 *`
 
 ```bash
 sudo ./chrome-dark-mode.sh
+# Need sudo because it edits the file in /usr instead of
+# the one in $HOME, which doesnt't work in my case 
 ```
 
 ## Fix loose object error when pushing in Git
 
 ```bash
-./error.sh # Edit the first line to cd to your repo directory
+# Edit the first line to cd to your repo directory, then
+./error.sh
 ```
