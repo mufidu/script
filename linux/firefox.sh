@@ -17,8 +17,8 @@ export deb_file=$(basename "$deb_url")
 
 # download if file does not exist
 if ! test -e "$deb_file"; then
-  printf "Downloading $deb_url\n"
-  wget "$deb_url"
+	printf "Downloading $deb_url\n"
+	wget "$deb_url"
 fi
 
 # get current and downloaded firefox versions
@@ -29,9 +29,9 @@ printf "Downloaded: $download_ver\n"
 
 # check if installed version is different from downloaded version
 if test "$curr_ver" != "$download_ver"; then
-  # install
-  sudo apt install ./"$deb_file"
+	# install
+	sudo apt install ./"$deb_file"
 
-  # hold version
-  sudo apt-mark hold firefox
+	# hold version
+	sudo apt-mark hold firefox
 fi

@@ -11,14 +11,12 @@ DIR="$HOME/Library/Safari/Touch Icons Cache/Images"
 
 # If no argument is provided then assume the icons are in the current directory
 ICONDIR=$1
-if [ $# -eq 0 ]
-then
-	ICONDIR=`pwd`
+if [ $# -eq 0 ]; then
+	ICONDIR=$(pwd)
 fi
 
-for png in "$ICONDIR"/*.png
-do
-	BASENAME=`basename "${png%.png}"`
+for png in "$ICONDIR"/*.png; do
+	BASENAME=$(basename "${png%.png}")
 
 	#We use an XPath to find the URL because you can't reliably parse XML with regular expressions
 	XPATH="//dict[dict/string='$BASENAME']/key[text()='URLString']/following-sibling::string[1]/text()"
@@ -27,11 +25,11 @@ do
 	URL=$(plutil -convert xml1 -o - "$DIR/../../Bookmarks.plist" | xmllint --xpath "$XPATH" -)
 
 	#Strip out the protocol and everything after the first forward slash
-	URL=`echo $URL | sed -e "s/http[s]*:\/\///g" -e "s/\/.*//g"`
+	URL=$(echo $URL | sed -e "s/http[s]*:\/\///g" -e "s/\/.*//g")
 
 	#md5 hash the URL and make it upper case
 	HASH="$(md5 -q -s $URL | tr '[a-z]' '[A-Z]')"
 
-	echo "`basename "$png"` ($URL) -> ${HASH}.png"
+	echo "$(basename "$png") ($URL) -> ${HASH}.png"
 	cp -f "$png" "$DIR/${HASH}.png"
 done

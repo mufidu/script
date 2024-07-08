@@ -1,3 +1,2 @@
 #!/bin/sh
- node ./blessed-contrib/examples/dashboard.js
-
+node ./blessed-contrib/examples/dashboard.js
