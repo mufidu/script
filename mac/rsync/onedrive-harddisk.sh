@@ -4,10 +4,10 @@ PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 # OneDrive ↔ Harddisk
 
 ## Pictures
-rclone sync -M -P "personal:Pictures" "/Users/mufid/.mounty/Files/Pictures" --exclude "**/IW VIBES/.git/**" --exclude "**/IW VIBES/januari/yas.zip" --exclude "**/Recording/ibu/**" -vv
+rclone sync -M -P "personal:Pictures" "/Volumes/HDD/Pictures" -vv
 
 ## Private
-rclone sync -M -P "personal:PRIVATE" "/Users/mufid/.mounty/Files/PRIVATE" -vv
+rclone sync -M -P "personal:PRIVATE" "/Volumes/HDD/PRIVATE" -vv
 
 ## Games
 
