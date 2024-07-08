@@ -12,4 +12,4 @@ rclone sync -M -P "personal:PRIVATE" "/Volumes/HDD/PRIVATE" -vv
 ## Games
 
 ### PrismLauncher
-rclone copy -M -P "/Users/mufid/Library/Application Support/PrismLauncher" "/Users/mufid/.mounty/Games/PrismLauncher" --exclude=".DS_Store" --exclude=".Trash/" -vv
+rclone copy -M -P "/Users/mufid/Library/Application Support/PrismLauncher" "/Volumes/HDD/Games/PrismLauncher" --exclude=".DS_Store" --exclude=".Trash/" -vv
