@@ -26,15 +26,22 @@ def rename_and_move_files(folder_a, folder_b):
         old_path = os.path.join(folder_a, file_a)
         new_filename = os.path.splitext(file_b)[0] + os.path.splitext(file_a)[1]
         new_path = os.path.join(folder_a, new_filename)
-        
+
         # Rename the file
         os.rename(old_path, new_path)
         print(f"Renamed '{file_a}' to '{new_filename}'")
-        
+
         # Move the renamed file to folder B
         final_path = os.path.join(folder_b, new_filename)
         shutil.move(new_path, final_path)
         print(f"Moved '{new_filename}' to '{folder_b}'")
+
+    # Remove folder A after moving files
+    try:
+        shutil.rmtree(folder_a)
+        print(f"Removed folder '{folder_a}'")
+    except Exception as e:
+        print(f"Error removing folder '{folder_a}': {e}")
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -49,4 +56,3 @@ if __name__ == "__main__":
         sys.exit(1)
 
     rename_and_move_files(folder_a, folder_b)
-
