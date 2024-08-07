@@ -38,3 +38,6 @@ rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pic
 
 ## Naruto
 rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pictures/Naruto" "personal:Pictures/Movie Clips/Naruto" --exclude=".DS_Store" --exclude=".Trash/" -vv
+
+## Attack on Titan
+rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pictures/Attack on Titan" "personal:Pictures/Movie Clips/Attack on Titan" --exclude=".DS_Store" --exclude=".Trash/" -vv
