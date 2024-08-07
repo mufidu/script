@@ -24,8 +24,8 @@ rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pic
 ## Identities
 rclone sync -M -P "/Users/mufid/Documents/IDENTITIES" "personal:PRIVATE/DOCUMENTS/IDENTITIES" --exclude=".DS_Store" --exclude=".Trash/" -vv
 
-## One Piece
-rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pictures/One Piece" "personal:Pictures/Movie Clips/One Piece" --exclude=".DS_Store" --exclude=".Trash/" -vv
+# ## One Piece
+# rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pictures/One Piece" "personal:Pictures/Movie Clips/One Piece" --exclude=".DS_Store" --exclude=".Trash/" -vv
 
 ## Minecraft
 rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pictures/Minecraft" "personal:Pictures/Games Clips/Minecraft" --exclude=".DS_Store" --exclude=".Trash/" -vv
@@ -33,11 +33,11 @@ rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pic
 ## FIFA 19
 rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pictures/FIFA 19" "personal:Pictures/Games Clips/FIFA 19" --exclude=".DS_Store" --exclude=".Trash/" -vv
 
-## Borderlands 2
-rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pictures/Borderlands 2" "personal:Pictures/Games Clips/Borderlands 2" --exclude=".DS_Store" --exclude=".Trash/" -vv
+# ## Borderlands 2
+# rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pictures/Borderlands 2" "personal:Pictures/Games Clips/Borderlands 2" --exclude=".DS_Store" --exclude=".Trash/" -vv
 
-## Naruto
-rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pictures/Naruto" "personal:Pictures/Movie Clips/Naruto" --exclude=".DS_Store" --exclude=".Trash/" -vv
+# ## Naruto
+# rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pictures/Naruto" "personal:Pictures/Movie Clips/Naruto" --exclude=".DS_Store" --exclude=".Trash/" -vv
 
-## Attack on Titan
-rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pictures/Attack on Titan" "personal:Pictures/Movie Clips/Attack on Titan" --exclude=".DS_Store" --exclude=".Trash/" -vv
+# ## Attack on Titan
+# rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pictures/Attack on Titan" "personal:Pictures/Movie Clips/Attack on Titan" --exclude=".DS_Store" --exclude=".Trash/" -vv
