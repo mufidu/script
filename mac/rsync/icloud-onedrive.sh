@@ -6,6 +6,9 @@ PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 ## Work
 rclone sync -M -P "/Users/mufid/Documents/WORK" "onedrive:PRIVATE/DOCUMENTS/WORK" --exclude=".DS_Store" --exclude=".Trash/" -vv
 
+## Temps
+rclone sync -M -P "/Users/mufid/Documents/TEMPS" "onedrive:PRIVATE/TEMPS" --exclude=".DS_Store" --exclude=".Trash/" -vv
+
 ## Semester 8
 rclone sync -M -P "/Users/mufid/Documents/SEMESTER 8" "personal:PRIVATE/DOCUMENTS/KULIAH/TELKOM UNIVERSITY/IF-44-01/SEMESTER 8" --exclude=".DS_Store" --exclude=".Trash/" -vv
 
