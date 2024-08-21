@@ -1,13 +1,15 @@
 import os
-import sys
 import shutil
+import sys
+
 
 def should_ignore(filename):
     # Add any other files you want to ignore here
-    ignore_list = ['.DS_Store']
-    return filename in ignore_list or filename.startswith('.')
+    ignore_list = [".DS_Store"]
+    return filename in ignore_list or filename.startswith(".")
 
-def rename_and_move_files(folder_a, folder_b):
+
+def rename_and_move_files(folder_b, folder_a):
     # Get the list of files in both folders, ignoring .DS_Store and hidden files
     files_a = [f for f in os.listdir(folder_a) if not should_ignore(f)]
     files_b = [f for f in os.listdir(folder_b) if not should_ignore(f)]
@@ -18,7 +20,9 @@ def rename_and_move_files(folder_a, folder_b):
 
     # Check if the number of files match
     if len(files_a) != len(files_b):
-        print(f"Error: Number of files in folders doesn't match. Folder A: {len(files_a)}, Folder B: {len(files_b)}")
+        print(
+            f"Error: Number of files in folders doesn't match. Folder A: {len(files_a)}, Folder B: {len(files_b)}"
+        )
         return
 
     # Rename files in folder A and move them to folder B
@@ -42,6 +46,7 @@ def rename_and_move_files(folder_a, folder_b):
         print(f"Removed folder '{folder_a}'")
     except Exception as e:
         print(f"Error removing folder '{folder_a}': {e}")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
