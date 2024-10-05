@@ -44,3 +44,18 @@ rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pic
 
 # ## Attack on Titan
 # rclone sync -M -P "/Users/mufid/Library/Mobile Documents/com~apple~CloudDocs/Pictures/Attack on Titan" "personal:Pictures/Movie Clips/Attack on Titan" --exclude=".DS_Store" --exclude=".Trash/" -vv
+
+# Google Drive ↔ OneDrive
+
+## Health Sync
+rclone sync -M -P "gdrive:Health Sync Activities" "personal:PRIVATE/BACKUP/Health Sync/Health Sync Activities" -vv
+
+rclone sync -M -P "gdrive:Health Sync Heart rate" "personal:PRIVATE/BACKUP/Health Sync/Health Sync Heart rate" -vv
+
+rclone sync -M -P "gdrive:Health Sync Oxygen saturation" "personal:PRIVATE/BACKUP/Health Sync/Health Sync Oxygen saturation" -vv
+
+rclone sync -M -P "gdrive:Health Sync Sleep" "personal:PRIVATE/BACKUP/Health Sync/Health Sync Sleep" -vv
+
+rclone sync -M -P "gdrive:Health Sync Steps" "personal:PRIVATE/BACKUP/Health Sync/Health Sync Steps" -vv
+
+rclone sync -M -P "gdrive:Health Sync Weight" "personal:PRIVATE/BACKUP/Health Sync/Health Sync Weight" -vv
